@@ -11,16 +11,16 @@ function addMember() {
         {
             type: "input",
             name: "name",
-            message: "Emter team member's name"
+            message: "Enter team member's name"
         },
         {
             type: "checkbox",
             name: "role",
             message: "Select team member's role",
             choices: [
-                "Engineer",
-                "Intern",
-                "Manager",
+                "engineer",
+                "intern",
+                "manager",
             ]
         },
         {
@@ -34,19 +34,19 @@ function addMember() {
             message: "Enter team member's email address",
         }])
 
-        .then(function ({ name, role, id, email }) {
+        .then(function ({name, role, id, email}) {
             let roleInfo = "";
-            if (role === "Engineer") {
-                roleInfo = "Github username";
-            } else if (role === "Intern") {
-                roleInfo = "school name";
+            if (role === "engineer") {
+                roleInfo = "Enter team member's Github username";
+            } else if (role === "intern") {
+                roleInfo = "Enter team member's school name";
             } else {
-                roleInfo = "office phone number";
+                roleInfo = "Enter team member's office phone number";
             }
             inquirer.prompt([{
                 type: "input",
                 name: "roleInfo",
-                message: "Enter team member's ${roleInfo}",
+                message: roleInfo,
             },
             {
                 type: "checkbox",
@@ -75,12 +75,12 @@ function addMember() {
                             } else {
                                 finishHtml();
                             }
-                        })
-                })
-        })
+                        });
+                });
+        });
 }
 
-function startHtml() {
+function startHTML() {
     const html = `<!DOCTYPE html>
     <html lang=\"en"\>
     <head>
@@ -96,7 +96,7 @@ function startHtml() {
         </nav>
         <div class=\"container"\>
             <div class=\"row"\>`;
-    fs.writeFile("./output.team.html", html, function (err) {
+    fs.writeFile("./output/team.html", html, function (err) {
         if (err) {
             console.log(err);
         }
