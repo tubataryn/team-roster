@@ -103,16 +103,6 @@ In addition to `Employee`'s properties and methods, `Intern` will also have:
 
 Finally, although it’s not a requirement, you should consider adding validation to ensure that user input provided is in the proper expected format.
 
+DEMO: https://drive.google.com/file/d/1k40F_lIHmRg5omNWbiv9wvVAp7UldKgi/view
 
-## Review
-
-You are required to submit the following for review:
-
-* A walkthrough video demonstrating the functionality of the application and passing tests.
-
-* A sample HTML file generated using your application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+REPO: https://github.com/tubataryn/team-roster
