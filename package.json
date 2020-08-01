@@ -1,0 +1,23 @@
+{
+  "name": "team-roster",
+  "version": "1.0.0",
+  "description": "a command line app that generates an html page displaying team members and their roles",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "bin": {
+    "team-roster": "./bin/team-roster"
+  },
+  "author": {
+    "name": "Taryn Fanning",
+    "email": "taryn.fanning@gmail.com",
+    "url": "https://github.com/tubataryn"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/tubataryn/team-roster",
+  "dependencies": {
+    "inquirer": "^6.3.1"
+  }
+}
